@@ -36,8 +36,29 @@ ul {
 
   body{
     margin: 100px;
+    background-color: lightcyan;
   }
 
-  section{
-    display: flex;
+  .homeSection{
+    display: grid;
+    grid-template-areas: 
+    'head head head'
+    'image text text'
+    'image text text';
   }
+
+  #sectionText{
+    grid-area: text;
+  }
+
+  #sectionImage{
+    grid-area: image;
+    padding-right: 10px;
+  }
+
+  #sectionHead{
+    grid-area: head;
+    font-size: 50px;
+    text-align: center;
+  }
+
