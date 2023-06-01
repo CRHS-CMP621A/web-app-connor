@@ -12,16 +12,12 @@
 </head>
 
 <body>
-    <div>
-        var map = L.map('map').setView([51.505, -0.09], 13);
+    <header>
+        <h1 id="whereHead">North Rustico</h1>
+        <h2>Address Here</h2>
+    </header>
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        L.marker([51.5, -0.09]).addTo(map)
-            .bindPopup('A pretty CSS3 popup.<br> Easily customizable')
-    </div>
+    <div id="map"></div>
 </body>
 
 </html>
