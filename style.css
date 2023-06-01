@@ -80,6 +80,7 @@ ul {
 
 #city-name-wrapper {
   text-align: center;
-  
+  border: 5px solid #000;
+  border-radius: 15px;
 }
 
