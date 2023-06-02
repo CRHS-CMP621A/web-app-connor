@@ -72,12 +72,6 @@ ul {
   font-size: 40px;
 }
 
-
-#cityname,
-.temp {
-  margin-top: 15px;
-}
-
 #city-name-wrapper {
   text-align: center;
   border: 5px solid #000;

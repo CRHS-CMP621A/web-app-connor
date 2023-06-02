@@ -25,6 +25,10 @@ If you are re-building an app that already exists, then explain what the issue i
 
 >Use the following format to insert links: `[Link text Here](https://link-url-here.org)`
 
+`[OpenWeatherMap](https://openweathermap.org/)`
+`[OpenWeatherMap API Tutorial 2021](https://www.youtube.com/watch?v=nGVoHEZojiQ)`
+`[Github Code](https://gist.github.com/BeatenBones/3a275d6ec92386d49c675468f23b6a87)`
+
 >>
 
 
