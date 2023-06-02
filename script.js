@@ -29,12 +29,12 @@ $(document).ready(function() {
       var wind_speed;
       var country_name;
       var weather_description;
-      var apiKey = "5dd765a29b95b2e058dfd9f33a1dbd0d";
+      var apiKey = "5d54b88937f9b6f61a9f47e1938d0751";
 
       altitude_text.innerHTML = "Altitude is " + altitude;
       latitude_text.innerHTML = "Latitude is " + lat;
 
-      $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + longit + "&appid=" + apiKey + "units=metric", function(data) {
+      $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + longit + "&appid=" + apiKey, function(data) {
 
         city_name = data["name"];
         country_name = data["sys"]["country"];
