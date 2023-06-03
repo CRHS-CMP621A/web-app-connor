@@ -1,3 +1,5 @@
+let reviews = []
+
 navigator.geolocation.getCurrentPosition(
     function (positon){
         var map = L.map('map').setView([46.4576607, -63.334517], 13);
@@ -55,3 +57,32 @@ $(document).ready(function() {
   }
 
 })
+
+class Review{
+  date = new Date()
+  id = (Date.now() + "").slice
+
+  constructor(text){
+    this.text = text;
+  }
+}
+
+class Food extends Review{
+  type = "Food"
+
+
+  constructor(text){
+    super(text)
+  }
+}
+
+class Book extends Review{
+  type = "Book"
+
+  constructor(text, genre){
+    super(text)
+    this.genre = genre
+  }
+}
+
+reviews.push()
