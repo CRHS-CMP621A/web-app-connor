@@ -93,21 +93,9 @@ ul {
   transition: all 0.5s, transform 1ms;
 }
 
-.form.hidden {
-  transform: translateY(-30rem);
-  height: 0;
-  padding: 0 2.25rem;
-  margin-bottom: 0;
-  opacity: 0;
-}
-
 .form__row {
   display: flex;
   align-items: center;
-}
-
-.form__row--hidden {
-  display: none;
 }
 
 .form__label {
@@ -123,7 +111,6 @@ ul {
   font-size: 1.4rem;
   border: none;
   border-radius: 3px;
-  background-color: var(--color-light--3);
   transition: all 0.2s;
 }
 
@@ -131,8 +118,3 @@ ul {
   outline: none;
   background-color: #fff;
 }
-
-.form__btn {
-  display: none;
-}
-

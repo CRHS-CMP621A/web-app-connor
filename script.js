@@ -1,5 +1,3 @@
-let reviews = []
-
 navigator.geolocation.getCurrentPosition(
     function (positon){
         var map = L.map('map').setView([46.4576607, -63.334517], 13);
@@ -20,8 +18,8 @@ $(document).ready(function() {
     navigator.geolocation.getCurrentPosition(showcityname);
 
     function showcityname(position) {
-      var lat = position.coords.latitude;
-      var longit = position.coords.longitude;
+      var lat = 46.4576607;
+      var longit = -63.334517;
       var altitude = position.coords.altitude;
       var latitude_text = document.getElementById("latitude-val");
       var altitude_text = document.getElementById("altit");
@@ -31,12 +29,12 @@ $(document).ready(function() {
       var wind_speed;
       var country_name;
       var weather_description;
-      var apiKey = "5d54b88937f9b6f61a9f47e1938d0751";
+      var apiKey = "bb2ad73781e462568678af25a8a3b24a";
 
       altitude_text.innerHTML = "Altitude is " + altitude;
       latitude_text.innerHTML = "Latitude is " + lat;
 
-      $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + longit + "&appid=" + apiKey, function(data) {
+      $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + longit + "&appid=" + apiKey + "&units=metric", function(data) {
 
         city_name = data["name"];
         country_name = data["sys"]["country"];
@@ -46,7 +44,7 @@ $(document).ready(function() {
         wind_speed = data["wind"]["speed"];
 
         $("#cityname").html(city_name + " &#40;" + country_name + "&#41; " + "has " + weather_description);
-        $(".temp").html(temp);
+        $(".temp").html(temp + "Celcius");
         $(".pressure").html(pressure + " mBar");
         $(".wind-spd").html(wind_speed + " m/s");
 
@@ -57,32 +55,3 @@ $(document).ready(function() {
   }
 
 })
-
-class Review{
-  date = new Date()
-  id = (Date.now() + "").slice
-
-  constructor(text){
-    this.text = text;
-  }
-}
-
-class Food extends Review{
-  type = "Food"
-
-
-  constructor(text){
-    super(text)
-  }
-}
-
-class Book extends Review{
-  type = "Book"
-
-  constructor(text, genre){
-    super(text)
-    this.genre = genre
-  }
-}
-
-reviews.push()
