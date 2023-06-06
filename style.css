@@ -1,0 +1,128 @@
+.header{
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  button{
+    cursor: pointer;
+  }
+
+  body{
+    margin: 100px;
+    background-color: lightcyan;
+  }
+
+  .homeSection{
+    display: grid;
+    grid-template-areas: 
+    'head head head'
+    'image text text'
+    'image text text';
+  }
+
+  #sectionText{
+    grid-area: text;
+  }
+
+  #sectionImage{
+    grid-area: image;
+    padding-right: 10px;
+  }
+
+  #sectionHead{
+    grid-area: head;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  #map{
+    height: 500px;
+    width: 1000px;
+  }
+
+  #address{
+    text-align: center;
+  }
+
+  #whereHead{
+    text-align: center;
+  }
+
+  h2,
+.temp, .pressure, .wind-spd, .weather-descr, #altit, #latitude-val {
+  font-size: 40px;
+}
+
+#city-name-wrapper {
+  text-align: center;
+  border: 5px solid #000;
+  border-radius: 15px;
+}
+
+.form {
+  background-color: var(--color-dark--2);
+  border-radius: 5px;
+  padding: 1.5rem 2.75rem;
+  margin-bottom: 1.75rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 2.5rem;
+
+  /* Match height and activity boxes */
+  height: 9.25rem;
+  transition: all 0.5s, transform 1ms;
+}
+
+.form__row {
+  display: flex;
+  align-items: center;
+}
+
+.form__label {
+  flex: 0 0 50%;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.form__input {
+  width: 100%;
+  padding: 0.3rem 1.1rem;
+  font-family: inherit;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+.form__input:focus {
+  outline: none;
+  background-color: #fff;
+}

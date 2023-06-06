@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Recommend Food and Book Options!</h1>
+  <h2>Thank you for your support</h2>
+
+  <div class="sidebar">
+
+    <ul class="reviews">
+      <form class="form hidden">
+        <div class="form__row">
+          <label class="form__label">Type</label>
+          <select class="form__input form__input--type">
+            <option value="food">Food</option>
+            <option value="book">Book</option>
+          </select>
+        </div>
+        <div class="form__row">
+          <label class="form__label">Name</label>
+          <input class="form__input form__input--name"/>
+        </div>
+        <div class="form__row">
+        <div class="form__row">
+          <label class="form__label">Genre</label>
+          <input class="form__input form__input--genre"/>
+        </div>
+        <div class="form__row">
+          <label class="form__label">Type of Food</label>
+          <input
+            class="form__input form__input--food--type"
+          />
+        </div>
+        <button class="form__btn">OK</button>
+      </form>
+    </ul>
+  </div>
+  <script src="suggest.js"></script>
+</body>
+
+</html>

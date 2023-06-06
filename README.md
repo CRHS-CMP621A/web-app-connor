@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/_AfzJBUU)
 # JS-Web-App
 ## Project Name:
 #### Developers: 
@@ -23,6 +24,10 @@ If you are re-building an app that already exists, then explain what the issue i
 >List the APIs used in your project and the associated tutorials / resources for learning about them. 
 
 >Use the following format to insert links: `[Link text Here](https://link-url-here.org)`
+
+`[OpenWeatherMap](https://openweathermap.org/)`
+`[OpenWeatherMap API Tutorial 2021](https://www.youtube.com/watch?v=nGVoHEZojiQ)`
+`[Github Code](https://gist.github.com/BeatenBones/3a275d6ec92386d49c675468f23b6a87)`
 
 >>
 
