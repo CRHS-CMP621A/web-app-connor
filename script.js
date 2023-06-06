@@ -21,7 +21,7 @@ $(document).ready(function() {
       altitude_text.innerHTML = "Altitude is " + altitude;
       latitude_text.innerHTML = "Latitude is " + lat;
 
-      $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + longit + "&appid=" + apiKey + "&units=metric", function(data) {
+      $.getJSON("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + longit + "&appid=" + apiKey + "&units=metric", function(data) {
 
         city_name = data["name"];
         country_name = data["sys"]["country"];
