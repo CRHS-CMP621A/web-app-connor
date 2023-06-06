@@ -63,8 +63,16 @@ ul {
   }
 
   #map{
-    height: 400px;
-    width: 800px;
+    height: 500px;
+    width: 1000px;
+  }
+
+  #address{
+    text-align: center;
+  }
+
+  #whereHead{
+    text-align: center;
   }
 
   h2,
